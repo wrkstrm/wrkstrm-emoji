@@ -12,7 +12,7 @@ let package = Package(
     .macCatalyst(.v13),
     .tvOS(.v16),
     .visionOS(.v1),
-    .watchOS(.v9)
+    .watchOS(.v9),
   ],
   products: [
     .library(name: "WrkstrmEmoji", targets: ["WrkstrmEmoji"])
@@ -29,7 +29,7 @@ let package = Package(
       name: "WrkstrmEmojiTests",
       dependencies: ["WrkstrmEmoji"],
       swiftSettings: Package.Inject.shared.swiftSettings
-    )
+    ),
   ]
 )
 
@@ -60,7 +60,7 @@ extension Package {
 extension SwiftSetting {
   public static let local: SwiftSetting = .unsafeFlags([
     "-Xfrontend",
-    "-warn-long-expression-type-checking=10"
+    "-warn-long-expression-type-checking=10",
   ])
 }
 
