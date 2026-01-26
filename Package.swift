@@ -8,7 +8,7 @@ let package = Package(
   name: "WrkstrmEmoji",
   platforms: [
     .iOS(.v16),
-    .macOS(.v13),
+    .macOS(.v15),
     .macCatalyst(.v13),
     .tvOS(.v16),
     .visionOS(.v1),
